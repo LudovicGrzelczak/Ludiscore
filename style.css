@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "archivo";
+  src: url(./assets/font/ArchivoNarrow-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/font/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* --------------------------------------------------------------------- */
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.nav-logo img {
+  width: 45%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav li {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin: 0 30px;
+  font-family: "archivo", sans-serif;
+  position: relative;
+  transition: 0.3s ease;
+}
+nav li:hover:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: rgb(255, 145, 77);
+  transform: translateY(30px);
+}
+
+.main-header {
+  background: url(./assets/img/Kingdomino/Kingdomino-Background.jpg)
+    center/cover;
+  height: 100%;
+  padding: 50px;
+}
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: rgba(49, 49, 49, 0.664);
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.game-pic {
+  width: 75%;
+  margin: 0 auto;
+}
+#kingdominoBox {
+  width: 100%;
+  border-radius: 10px;
+}
+.game-details {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "feat info info"
+    "desc desc desc";
+  border-radius: 20px;
+}
+.features {
+  grid-area: feat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.features ul {
+  width: 80%;
+}
+.features li {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  padding: 7px;
+  font-size: 1.1rem;
+}
+.features li:first-child {
+  color: rgb(56, 182, 255);
+}
+.features li:nth-child(3) {
+  color: rgb(255, 145, 77);
+}
+.features span {
+  text-align: left;
+  color: white;
+  font-weight: 500;
+}
+.infos {
+  grid-area: info;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infos::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: white;
+  position: absolute;
+}
+.infos table {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+.infos tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.infos tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.infos td:first-child {
+  font-weight: 600;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+}
+.description {
+  grid-area: desc;
+  padding: 40px 20px 0 20px;
+  margin-top: 10px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 25px;
+}
+.description::before {
+  content: "";
+  width: 90%;
+  left: 5%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  transform: translateY(-20px);
+}
+.scoring-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: teal;
+  
+}
+.scoring-container .title {
+  text-align: center;
+}
+.elements {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  
+}
+.elements .part-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.elements .part-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+

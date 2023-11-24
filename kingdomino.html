@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdomino</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <img src="./assets/img/Ludi’Score-logo.png" alt="">
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li>Ludi'Score, c'est quoi ?</li>
+                <li>Jeux</li>
+                <li>Contact</li>
+                <!-- Fonctionnalité pour plus tard -->
+                <!-- <li>
+                    <button>Se connecter</button>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="main-header">
+            <div class="header-container">
+                <div class="header-left">
+                    <div class="game-pic">
+                        <img src="./assets/img/Kingdomino/kingdomino.jpg" id="kingdominoBox" alt="Boite de jeu Kingdomino">
+                    </div>
+
+                </div>
+                <div class="header-right">
+                    <div class="game-details">
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-users-line fa-2x"></i>
+                                    <span>2 à 4 joueurs</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-hourglass-half fa-2x"></i>
+                                    <span>Moins de 30 min</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cake-candles fa-2x"></i>
+                                    <span>8 ans et +</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infos">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Thème(s)</td>
+                                        <td>Moyen Age</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mécanisme(s)</td>
+                                        <td>Placement de tuiles</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Création</td>
+                                        <td>Bruno Cathala</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="description">
+                            Composez un petit royaume avec des dominos présentant 2 types de terrains. A chaque tour,
+                            chaque joueur pourra choisir une tuile sachant que les meilleures tuiles vous feront jouer
+                            en dernière position et ainsi avoir moins de choix le tour suivant.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="scoring">
+        <div class="scoring-container">
+            <div class="title">
+                <h1>Feuille de score Kingdomino</h1>
+            </div>
+            <form action="" class="box">
+                <div class="elements">
+                    <div class="part-left"></div>
+                    <div class="part-right">
+                        <div class="name-container">
+                            <input type="text" name="player" id="player1" placeholder="Nom du joueur 1">
+                        </div>
+                        <div class="name-container">
+                            <input type="text" name="player" id="player2" placeholder="Nom du joueur 2">
+                        </div>
+                        <div class="name-container">
+                            <input type="text" name="player" id="player3" placeholder="Nom du joueur 3">
+                        </div>
+                        <div class="name-container">
+                            <input type="text" name="player" id="player4" placeholder="Nom du joueur 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left">
+                        <div class="tile-type">Champs</div>
+                        <div class="crown">Couronne</div>
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="integer" name="fields-score" id="fieldsScoreP1">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="fields-score" id="fieldsScoreP2">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="fields-score" id="fieldsScoreP3">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="fields-score" id="fieldsScoreP4">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left">
+                        <div class="tile-type">Foret</div>
+                        <div class="crown">Couronne</div>
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="integer" name="forest-score" id="forestScoreP1">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="forest-score" id="forestScoreP2">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="forest-score" id="forestScoreP3">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="forest-score" id="forestScoreP4">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left">
+                        <div class="tile-type">Lac</div>
+                        <div class="crown">Couronne</div>
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="number" name="lake-score" id="lakeScoreP1">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="lake-score" id="lakeScoreP2">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="lake-score" id="lakeScoreP3">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="lake-score" id="lakeScoreP4">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left">
+                        <div class="tile-type">Prairie</div>
+                        <div class="crown">Couronne</div>
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="number" name="meadow-score" id="meadowScoreP1">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="meadow-score" id="meadowScoreP2">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="meadow-score" id="meadowScoreP3">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="meadow-score" id="meadowScoreP4">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left">
+                        <div class="tile-type">Désert</div>
+                        <div class="crown">Couronne</div>
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="number" name="desert-score" id="desertScoreP1">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="desert-score" id="desertScoreP2">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="desert-score" id="desertScoreP3">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="desert-score" id="desertScoreP4">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left">
+                        <div class="tile-type">Mine</div>
+                        <div class="crown">Couronne</div>
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="number" name="mine-score" id="mineScoreP1">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="mine-score" id="mineScoreP2">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="mine-score" id="mineScoreP3">
+                        </div>
+                        <div class="score">
+                            <input type="number" name="mine-score" id="mineScoreP4">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left castle">
+                        Chateau centré
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="checkbox" name="castle-center" id="castleP1">
+                            <label for="castleP1"></label>
+                        </div>
+                        <div class="score">
+                            <input type="checkbox" name="castle-center" id="castleP2">
+                            <label for="castleP2"></label>
+                        </div>
+                        <div class="score">
+                            <input type="checkbox" name="castle-center" id="castleP3">
+                            <label for="castleP3"></label>
+                        </div>
+                        <div class="score">
+                            <input type="checkbox" name="castle-center" id="castleP4">
+                            <label for="castleP4"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <div class="part-left kingdom">
+                        Royaume complet
+                    </div>
+                    <div class="part-right">
+                        <div class="score">
+                            <input type="checkbox" name="kingdomfull" id="kingdomFullP1">
+                            <label for="kingdomFullP1"></label>
+                        </div>
+                        <div class="score">
+                            <input type="checkbox" name="kingdomfull" id="kingdomFullP2">
+                            <label for="kingdomFullP2"></label>
+                        </div>
+                        <div class="score">
+                            <input type="checkbox" name="kingdomfull" id="kingdomFullP3">
+                            <label for="kingdomFullP3"></label>
+                        </div>
+                        <div class="score">
+                            <input type="checkbox" name="kingdomfull" id="kingdomFullP4">
+                            <label for="kingdomFullP4"></label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Calculer">
+                <div class="elements">
+                    <div class="part-left total">
+                        Total
+                    </div>
+                    <div class="part-right">
+                        <div class="total-player1" id="totalP1"></div>
+                        <div class="total-player2" id="totalP2"></div>
+                        <div class="total-player3" id="totalP3"></div>
+                        <div class="total-player4" id="totalP4"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
